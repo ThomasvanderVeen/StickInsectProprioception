@@ -2,15 +2,28 @@ import numpy as np
 import matplotlib.pyplot as plt
 from collections import namedtuple
 import matplotlib.pylab as pylab
+import matplotlib
 import pickle
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 from tqdm.contrib import itertools
 from scipy.ndimage import gaussian_filter1d
 from itertools import product
 import pandas as pd
+import scipy.stats.mstats as zscore
+from dtw import dtw
+from matplotlib.colors import LogNorm
+import import_ipynb
+
+
+#possible choices for joint_string:
+
+#'nostep'
+#'step'
 
 parameters = {'N_SIMULATIONS': 2,
               'N_HAIRS': 50,
+              'joint_string': 'nostep',
+              'pad': 0.3
               }
 
 constants = {'N_ANGLES': 18,
@@ -25,14 +38,16 @@ custom_colors = ['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#FFDB58
 custom_markers = ['o', '^', 'v', '*', '+', 'x', 's', 'p']
 custom_linestyles = ['-', '--', '-.', ':', '-', '--', ':', '-.']
 
-plot_parameters = {'legend.fontsize': 10,
-                   'figure.figsize': (5.728, 3.54),
+plot_parameters = {'legend.fontsize': 8,
+                   'figure.figsize': (3.75*0.95, 0.95*3.75/1.61803398875),
                    'figure.dpi': 300,
-                   'axes.labelsize': 15,
-                   'axes.titlesize': 15,
-                   'xtick.labelsize': 10,
-                   'ytick.labelsize': 10,
+                   'axes.labelsize': 9,
+                   'axes.titlesize': 9,
+                   'xtick.labelsize': 8,
+                   'ytick.labelsize': 8,
+                   "font.family": "arial"
                    }
+matplotlib.pyplot.rcdefaults()
 
 pylab.rcParams.update(plot_parameters)
 

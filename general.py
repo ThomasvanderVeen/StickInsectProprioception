@@ -20,9 +20,9 @@ import import_ipynb
 #'nostep'
 #'step'
 
-parameters = {'N_SIMULATIONS': 2,
+parameters = {'N_SIMULATIONS': 78,
               'N_HAIRS': 50,
-              'joint_string': 'nostep',
+              'joint_string': 'nostep_78',
               'pad': 0.3
               }
 

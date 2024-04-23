@@ -13,6 +13,7 @@ import scipy.stats.mstats as zscore
 from dtw import dtw
 from matplotlib.colors import LogNorm
 import import_ipynb
+import os
 
 
 #possible choices for joint_string:
@@ -20,9 +21,9 @@ import import_ipynb
 #'nostep'
 #'step'
 
-parameters = {'N_SIMULATIONS': 78,
+parameters = {'N_SIMULATIONS': 2,
               'N_HAIRS': 50,
-              'joint_string': 'nostep_78',
+              'joint_string': 'nostep',
               'pad': 0.3
               }
 
@@ -133,3 +134,10 @@ def get_statistics(true_positive, true_negative, false_positive, false_negative)
     TNR = true_negative / (true_negative + false_positive)
 
     return [true_positive, true_negative, false_positive, false_negative, P, N, T, MCC, ACC, TPR, TNR]
+
+def create_folder_if_not_exists(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+        print(f"Folder '{folder_path}' created successfully.")
+    else:
+        print(f"Folder '{folder_path}' already exists.")

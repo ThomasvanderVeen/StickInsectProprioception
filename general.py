@@ -18,12 +18,12 @@ import os
 
 #possible choices for joint_string:
 
-#'nostep'
+#'nostep_2'
 #'step'
 
 parameters = {'N_SIMULATIONS': 2,
               'N_HAIRS': 50,
-              'joint_string': 'nostep',
+              'joint_string': 'nostep_78',
               'pad': 0.3
               }
 
@@ -46,7 +46,7 @@ plot_parameters = {'legend.fontsize': 8,
                    'axes.titlesize': 9,
                    'xtick.labelsize': 8,
                    'ytick.labelsize': 8,
-                   "font.family": "arial"
+                   "font.family": 'Times New Roman'
                    }
 matplotlib.pyplot.rcdefaults()
 

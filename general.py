@@ -19,11 +19,12 @@ import os
 #possible choices for joint_string:
 
 #'nostep_2'
-#'step'
+#'nostep_78'
+#'step_11'
 
-parameters = {'N_SIMULATIONS': 2,
+parameters = {'N_SIMULATIONS': 11,
               'N_HAIRS': 50,
-              'joint_string': 'nostep_78',
+              'joint_string': 'step_11',
               'pad': 0.3
               }
 

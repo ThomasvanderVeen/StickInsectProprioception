@@ -22,9 +22,9 @@ import os
 #'nostep_78'
 #'step_11'
 
-parameters = {'N_SIMULATIONS': 11,
+parameters = {'N_SIMULATIONS': 2,
               'N_HAIRS': 50,
-              'joint_string': 'step_11',
+              'joint_string': 'step',
               'pad': 0.3
               }
 

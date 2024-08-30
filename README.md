@@ -6,6 +6,10 @@ This repository contains the code for the research papers:
 
 Running the code reproduces all the results presented in the articles.
 
+## Requirements
+
+At least 16GB of RAM, 32GB preferred. 
+
 ## Installation
 
 Follow these steps to install and set up the project:

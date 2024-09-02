@@ -20,7 +20,7 @@ Follow these steps to install and set up the project:
 
 2. Navigate the project directory
     ```bash
-   cd your-repository
+   cd StickInsectProprioception
 
 3. Install dependencies
    ```bash

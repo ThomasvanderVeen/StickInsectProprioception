@@ -23,6 +23,7 @@ import matplotlib
 from matplotlib.colors import LogNorm
 from matplotlib.patches import Rectangle
 from matplotlib.lines import Line2D
+import seaborn as sns
 
 # Miscellaneous
 import pickle
@@ -34,8 +35,8 @@ import import_ipynb
 parameters = {'N_SIMULATIONS': 78,          # The maximum number of simulations
               'N_HAIRS': 50,                # The number of hairs in a hair row
               'pad': 0.3,                   # Padding of figures (mm)
-              'save_data': False,            # Saving or not saving data
-              'run_optimization': False      # Running or skipping optimization
+              'save_data': True,            # Saving or not saving data
+              'run_optimization': True      # Running or skipping optimization
               }
 
 # Constants, not subject to modification
